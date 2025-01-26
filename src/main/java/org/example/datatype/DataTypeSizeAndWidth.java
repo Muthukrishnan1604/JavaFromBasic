@@ -49,6 +49,9 @@ public class DataTypeSizeAndWidth {
         System.out.println("boolean has only two values " + true + " and " + false );
 
         System.out.println("boolean size in bits is 1");
+
+        System.out.println("Character size in bits is " + Character.SIZE);
+
     }
 
 }
