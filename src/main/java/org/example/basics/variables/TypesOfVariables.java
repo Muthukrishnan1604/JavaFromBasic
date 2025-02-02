@@ -1,4 +1,4 @@
-package src.main.java.org.example.variables;
+package src.main.java.org.example.basics.variables;
 
 /*
     There are different types of variables in Java. They are

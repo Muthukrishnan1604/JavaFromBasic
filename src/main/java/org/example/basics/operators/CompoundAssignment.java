@@ -1,4 +1,4 @@
-package src.main.java.org.example.operators;
+package src.main.java.org.example.basics.operators;
 
 /*
   Compound Assignment is the short hand way for performing the addition and other operators operation

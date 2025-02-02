@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 /*
     Underflow in Java occurs when a data type tries to hold a value that is smaller than its minimum limit.
     This situation is more common with floating-point types but can also happen with integer types.

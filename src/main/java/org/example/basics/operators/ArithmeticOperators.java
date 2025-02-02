@@ -1,4 +1,4 @@
-package src.main.java.org.example.operators;
+package src.main.java.org.example.basics.operators;
 
 /*
   Addition operator is represented by +
@@ -9,7 +9,7 @@ package src.main.java.org.example.operators;
 
   Note - input1 and input2 are operands
  */
-public class Operators {
+public class ArithmeticOperators {
 
     public static void main(String[] args) {
         int input1 = 11;
