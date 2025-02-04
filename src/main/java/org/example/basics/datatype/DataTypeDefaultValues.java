@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 
 /*
     Run the below code to see the default value which is assigned by java compiler for each primitive data type

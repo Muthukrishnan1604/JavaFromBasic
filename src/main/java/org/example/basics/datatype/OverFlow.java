@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 
 /*
     Overflow in Java occurs when a data type exceeds its maximum limit and wraps around to the minimum value,

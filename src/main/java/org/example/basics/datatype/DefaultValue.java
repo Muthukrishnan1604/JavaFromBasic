@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 
 /*
     Here in this modal class I didn't assign any value to

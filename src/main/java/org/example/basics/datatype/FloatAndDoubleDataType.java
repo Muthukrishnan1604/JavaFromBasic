@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 
 /*
  By default java will treat the decimal value as double so

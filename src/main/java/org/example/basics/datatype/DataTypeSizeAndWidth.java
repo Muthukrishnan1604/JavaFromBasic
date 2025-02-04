@@ -1,4 +1,4 @@
-package src.main.java.org.example.datatype;
+package src.main.java.org.example.basics.datatype;
 
 /*
     Each data type have different size in memory based on that it will hold the value within that range

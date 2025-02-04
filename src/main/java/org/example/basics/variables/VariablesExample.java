@@ -1,4 +1,4 @@
-package src.main.java.org.example.variables;
+package src.main.java.org.example.basics.variables;
 
 public class VariablesExample {
 
