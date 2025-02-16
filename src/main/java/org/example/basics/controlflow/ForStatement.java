@@ -4,6 +4,8 @@ package src.main.java.org.example.basics.controlflow;
 To repeat same statement for some number of time we will use the for loop
 
 syntax -> for(init; expression; increment or decrement)
+
+if I want to come out from the loop after particular value we can use break statement
  */
 
 public class ForStatement {
@@ -23,6 +25,14 @@ public class ForStatement {
 
         for (double rate = 2.0; rate <= 5.0; rate++) {
             double interestAmount = calculateInterest(10_000.0, rate);
+            System.out.println("10,000 at " + rate + "% interest = " + interestAmount);
+        }
+
+        for (double rate = 2.0; rate <= 5.0; rate++) {
+            double interestAmount = calculateInterest(10_000.0, rate);
+            if(rate == 4.0) {
+                break;
+            }
             System.out.println("10,000 at " + rate + "% interest = " + interestAmount);
         }
 
