@@ -1,5 +1,6 @@
 package src.main.java.org.example.interestingfacts;
 
+
 /*
  If we use + operator in between two character value it will not perform concat it will perform the addition
  */
