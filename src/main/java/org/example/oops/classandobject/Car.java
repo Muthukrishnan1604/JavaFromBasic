@@ -1,4 +1,4 @@
-package src.main.java.org.example.oops;
+package src.main.java.org.example.oops.classandobject;
 
 public class Car {
 

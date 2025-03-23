@@ -1,4 +1,4 @@
-package src.main.java.org.example.challenges.oops.constructor;
+package src.main.java.org.example.oops.constructor;
 
 public class BankAccountConstructor {
 
@@ -12,19 +12,27 @@ public class BankAccountConstructor {
 
     private String phoneNumber;
 
+    /*
+        If we assign the same name for the constructor with different parameter
+        and order of parameter is called constructor overloading
+     */
+
     public BankAccountConstructor() {
         System.out.println("Empty constructor is called");
     }
 
     public BankAccountConstructor(int accountNumber, int accountBalance, String customerName,
-                                  String email, String phoneNumber) {
-        System.out.println("Argument constructot called");
+                                  String email, String phone) {
+        System.out.println("Argument constructor called");
 
         this.accountNumber = accountNumber;
         this.accountBalance = accountBalance;
         this.customerName = customerName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        phoneNumber = phone;
+        /* It's not mandatory to match the parameter name with the field name,
+           it is recommended to pass the parameter name same like field name
+        */
     }
 
     public boolean isValidNumber() {
