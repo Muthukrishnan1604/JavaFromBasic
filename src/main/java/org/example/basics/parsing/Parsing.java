@@ -8,7 +8,6 @@ perform addition it will concat the value and won't perform addition
  */
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 public class Parsing {
 

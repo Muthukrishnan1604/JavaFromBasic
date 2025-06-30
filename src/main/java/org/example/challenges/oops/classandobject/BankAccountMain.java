@@ -1,6 +1,5 @@
 package src.main.java.org.example.challenges.oops.classandobject;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class BankAccountMain {
