@@ -21,7 +21,7 @@ If we need to perform same operation for multiple statements we can write statem
 
 switch won't support all the data type: It will support byte, short, int, char, String and enum
 
-If we didn't include the break statement once after condition satified it won't check the other cases
+If we didn't include the break statement once after condition satisfied it won't check the other cases
 but, it will perform logic inside other cases
 
 yield should be used inside the block if we have return statement outside
@@ -33,7 +33,7 @@ public class Switch {
         switchMethod(1);
         switchMethod(2);
         switchMethod(3);
-        switchMethod(1L);
+        switchMethod(Long.MAX_VALUE);
         newSwitchStatement(1);
         newSwitchStatement(3);
         newSwitchStatement(7);
@@ -76,14 +76,14 @@ public class Switch {
 
     private static void switchMethod(long value){
         System.out.println("Switch won't support long, float and double data types " + value);
-            /*
+
             switch(value) {
-                case 1 :
+                case 9_223_372_036_854_775_807L:
                     System.out.println("Switch won't support long, float and double data types");
                     break;
                 default:
                     System.out.println("Not 1 and 2");
-            }*/
+            }
     }
 
     private static String getQuaterUsingOldSwitch(String month) {

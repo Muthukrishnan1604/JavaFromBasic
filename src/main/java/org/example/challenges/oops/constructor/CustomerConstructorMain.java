@@ -1,9 +1,36 @@
 package src.main.java.org.example.challenges.oops.constructor;
 
 /*
-If we new keyword and create object then only it will create object by mapping to the new reference address
-else it will just create one object by referring to the existing address. If you change the value in
-any one of the object then the same will reflect in the other object
+new Keyword and Object Creation:
+
+When you use the new keyword (e.g., MyClass obj = new MyClass();),
+a new object is created in memory (on the heap).
+
+This new object is allocated a unique memory address (reference address).
+
+The variable (obj in the example) then stores this new reference address, "pointing" to the newly created object.
+
+Assigning Existing References (No new Keyword):
+
+If you assign one object reference variable to another without using new (e.g., MyClass obj2 = obj1;),
+no new object is created.
+
+Instead, both reference variables (obj1 and obj2 in the example) will now point to the exact same object in memory. They store the same memory address.
+
+Impact of Changes with Shared References:
+
+When multiple reference variables point to the same object:
+
+If you modify the state (data/fields) of the object using any of these reference variables,
+the change will be reflected in all other reference variables that point to that same object.
+
+This is because you are modifying the single underlying object, not separate copies.
+
+Analogy:
+
+Think of it like two different remote controls (reference variables) controlling the same TV (object).
+If you change the channel with one remote, the TV's channel changes, and if you pick up the other remote,
+it will show the new channel because it's still controlling the same TV.
  */
 
 public class CustomerConstructorMain {

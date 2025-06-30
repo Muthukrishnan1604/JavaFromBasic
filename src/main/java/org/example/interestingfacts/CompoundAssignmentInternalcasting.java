@@ -21,7 +21,7 @@ public class CompoundAssignmentInternalcasting {
 
         //result = result + 15.5;
 
-        result = (int) (result + 15.5);
+        //result = (int) (result + 15.5);
 
         System.out.println(result);
 

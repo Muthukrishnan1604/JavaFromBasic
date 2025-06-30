@@ -5,5 +5,41 @@ public class Fish extends Animal {
 
     private int gills;
 
-    
+    public Fish(String type, double weight, int fins, int gills) {
+        super(type, "small", weight);
+        this.fins = fins;
+        this.gills = gills;
+    }
+
+    private void moveMuscles() {
+        System.out.print("Muscles Moving");
+    }
+
+    private void moveBackFin() {
+        System.out.print("BackFin Moving");
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("It won't make noise");
+    }
+
+    @Override
+    public void move(String speed) {
+        super.move(speed);
+        moveMuscles();
+        if(speed == "fast") {
+            moveBackFin();
+        }
+        System.out.println();
+    }
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "fins=" + fins +
+                ", gills=" + gills +
+                ", type='" + type + '\'' +
+                "} " + super.toString();
+    }
 }
