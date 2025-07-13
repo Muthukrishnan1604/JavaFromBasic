@@ -11,4 +11,8 @@ public class Comedy extends Movie{
         super.watchMovie();
         System.out.printf("..%s%n".repeat(3), "Something Funny happens", "Something even funnier happens", "Happy Ending");
     }
+
+    public void watchComedy() {
+        System.out.println("Watching a Comedy movie");
+    }
 }

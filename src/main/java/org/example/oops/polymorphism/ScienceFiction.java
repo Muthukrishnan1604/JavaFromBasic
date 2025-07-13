@@ -11,4 +11,8 @@ public class ScienceFiction extends Movie {
         super.watchMovie();
         System.out.printf("..%s%n".repeat(3), "Aliens intro", "Interval scene", "Climax");
     }
+
+    public void watchScienceFiction() {
+        System.out.println("Watching a Science Fiction movie");
+    }
 }
