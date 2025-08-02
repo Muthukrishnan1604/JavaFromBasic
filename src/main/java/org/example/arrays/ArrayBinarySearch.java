@@ -10,7 +10,7 @@ public class ArrayBinarySearch {
         System.out.println(Arrays.toString(strings));
         // Note -> We need to apply binary search only for sorted arrays
         if(Arrays.binarySearch(strings, "Hema") > 0) {
-            System.out.println("Found Muthu in the list");
+            System.out.println("Found in the list");
         } else {
             System.out.println("Name not found in the list");
         }

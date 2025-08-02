@@ -33,5 +33,14 @@ public class CompoundAssignmentInternalcasting {
 
         System.out.println(result);
 
+        byte byteVar = 5;
+        short shortVar = byteVar;
+        int intVar = shortVar;
+        float floatVar = intVar;
+
+        long longVar = intVar;
+        float floatVar1 = longVar;
+        System.out.println(floatVar1);
+
     }
 }
