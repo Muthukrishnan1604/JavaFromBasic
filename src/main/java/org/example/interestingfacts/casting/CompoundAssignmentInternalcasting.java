@@ -1,4 +1,4 @@
-package src.main.java.org.example.interestingfacts;
+package src.main.java.org.example.interestingfacts.casting;
 
 /*
  In actual java code if we try to apply operator with two different data types compiler will throw error

@@ -74,6 +74,7 @@ public class StringBuilderAndMethods {
         printInformation(emptyStart32);
 
         StringBuilder builder = new StringBuilder("Hello" + " Muthu!");
+
         builder.append(" Divya loves you");
         int indexOfY = builder.indexOf("y");
         builder.delete(indexOfY, indexOfY + 2).insert(indexOfY, 'i');

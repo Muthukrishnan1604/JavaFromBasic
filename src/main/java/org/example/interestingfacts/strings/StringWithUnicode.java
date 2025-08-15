@@ -1,4 +1,4 @@
-package src.main.java.org.example.interestingfacts;
+package src.main.java.org.example.interestingfacts.strings;
 
 /*
 If we add unicode in between the String it will convert that

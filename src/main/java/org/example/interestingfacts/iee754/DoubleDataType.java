@@ -1,4 +1,4 @@
-package src.main.java.org.example.interestingfacts;
+package src.main.java.org.example.interestingfacts.iee754;
 
 /*
 Don't use Double and float in case of decimal value calculations are required in your field

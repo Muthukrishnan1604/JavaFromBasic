@@ -1,4 +1,4 @@
-package src.main.java.org.example.interestingfacts;
+package src.main.java.org.example.interestingfacts.strings;
 
 
 /*
