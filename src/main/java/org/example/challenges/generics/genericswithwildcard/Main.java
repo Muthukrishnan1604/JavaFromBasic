@@ -27,6 +27,14 @@ public class Main {
         Sorter.sortList(doubleList);
         Sorter.sortList(stringList);
 
+        for(Object obj : Sorter.merge(integerList, stringList)) {
+            if(obj instanceof Integer val)
+                System.out.println(val);
+            else if(obj instanceof String s)
+                System.out.println(s);
+            else
+                System.out.println(obj);
+        }
     }
 
 }

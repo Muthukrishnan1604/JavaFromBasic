@@ -1,17 +1,18 @@
-package src.main.java.org.example.generics;
+package src.main.java.org.example.challenges.generics.challenge;
 
-import src.main.java.org.example.generics.util.QueryItem;
-import src.main.java.org.example.generics.util.QueryList;
+import src.main.java.org.example.challenges.generics.challenge.util.QueryItem;
 
 import java.util.Random;
 
-public class Student implements QueryItem {
+public abstract class Student implements QueryItem {
 
     private String name;
 
     private String course;
 
     private int yearStarted;
+
+    private int studentId;
 
     protected static Random random = new Random();
 
@@ -45,4 +46,16 @@ public class Student implements QueryItem {
             default -> false;
         };
     }
+
+    @Override
+    public int compareTo(Integer anotherId) {
+        return Integer.compare(studentId, anotherId);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+
+    public abstract int compareTo(Double anotherId);
 }
