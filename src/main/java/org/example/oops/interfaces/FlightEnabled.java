@@ -48,7 +48,7 @@ public interface FlightEnabled {
 
     double KM_TO_MILES  = 0.621371;
 
-    public abstract void takeOff();
+    abstract void takeOff();
 
     abstract void land();
 
