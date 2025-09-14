@@ -1,4 +1,4 @@
-package src.main.java.org.example.lists.linkedlist;
+package src.main.java.org.example.collections.lists.linkedlist;
 
 import java.util.Iterator;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package src.main.java.org.example.lists.arraylist;
+package src.main.java.org.example.collections.lists.arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;

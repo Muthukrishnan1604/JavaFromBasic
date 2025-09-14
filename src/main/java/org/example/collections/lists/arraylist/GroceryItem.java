@@ -1,4 +1,4 @@
-package src.main.java.org.example.lists.arraylist;
+package src.main.java.org.example.collections.lists.arraylist;
 
 public record GroceryItem(String name, String type, int count) {
 
