@@ -5,6 +5,11 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println(DayOfTheWeek.doSomething());
+
+        System.out.println(DayOfTheWeek.FRI.getDisplayValue());
+
         DayOfTheWeek weekDay = getRandomDay();
         System.out.println(weekDay);
         // ordinal will return the order of the enum
