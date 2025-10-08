@@ -1,7 +1,5 @@
 package src.main.java.org.example.challenges.genai.map;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
