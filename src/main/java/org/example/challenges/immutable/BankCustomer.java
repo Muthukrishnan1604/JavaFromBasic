@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class BankCustomer {
+public final class BankCustomer {
 
     private static int lastCustomerId = 1;
 
@@ -15,7 +15,7 @@ public class BankCustomer {
 
     private final List<BankAccount> accounts = new ArrayList<>();
 
-    public BankCustomer(String customerName, double checkingAmount, double savingsAmount) {
+    BankCustomer(String customerName, double checkingAmount, double savingsAmount) {
         this.customerName = customerName;
         this.customerId = lastCustomerId++;
         accounts.add(new BankAccount(AccountType.CHECKING, checkingAmount));
@@ -26,13 +26,24 @@ public class BankCustomer {
         return customerName;
     }
 
-    public int getCustomerId() {
-        return customerId;
+    public String getCustomerId() {
+        return "%015d".formatted(customerId);
     }
 
     public List<BankAccount> getAccounts() {
-        return new ArrayList<>(this.accounts);
+        return List.copyOf(this.accounts);
     }
+
+    public BankAccount getAccount(AccountType type) {
+        List<BankAccount> accounts = new ArrayList<>(this.accounts);
+        for(BankAccount account : accounts) {
+            if(type.name().equals(account.getType().name())) {
+                return account;
+            }
+        }
+        return null;
+    }
+
 
     @Override
     public String toString() {

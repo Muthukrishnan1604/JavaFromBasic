@@ -1,5 +1,7 @@
 package src.main.java.org.example.challenges.immutable;
 
+import java.util.*;
+
 enum AccountType {
     CHECKING,
     SAVINGS
@@ -11,7 +13,9 @@ public class BankAccount {
 
     private final AccountType type;
 
-    private final double balanceAmount;
+    private double balanceAmount;
+
+    private final Map<Long, Transaction> transactions = new LinkedHashMap<>();
 
     public BankAccount(AccountType type, double balanceAmount) {
         this.type = type;
@@ -24,6 +28,26 @@ public class BankAccount {
 
     public double getBalanceAmount() {
         return balanceAmount;
+    }
+
+    public Map<Long, String> getTransactions() {
+        Map<Long, String> transactionMap = new LinkedHashMap<>();
+        for(var tx : transactions.entrySet()) {
+            transactionMap.put(tx.getKey(), tx.getValue().toString());
+        }
+        return transactionMap;
+    }
+
+    void commitTransaction(int routingNumber, long transactionId, String customerId, double transactionAmount) {
+        try{
+            balanceAmount += transactionAmount;
+            Transaction transaction = new Transaction(routingNumber, Integer.parseInt(customerId), transactionId, transactionAmount);
+            System.out.println("Transaction committed successfully");
+            transactions.putIfAbsent(transactionId, transaction);
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("Transaction Failed Due to Invalid Customer ID");
+        }
+
     }
 
     @Override
