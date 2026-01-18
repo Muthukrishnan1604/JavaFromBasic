@@ -15,5 +15,14 @@ public class InstanceMethod {
 
     public static void test() {
         System.out.println("Inside the test method");
+        String test = null;
+
+        try{
+            System.out.println(test.repeat(20));
+        } catch (IllegalArgumentException | NullPointerException runtimeException) {
+            System.out.println("Null Pointer Exception");
+        } catch (Exception exception) {
+            System.out.println("Inside Exception catch block");
+        }
     }
 }
