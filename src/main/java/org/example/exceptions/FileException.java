@@ -16,6 +16,7 @@ public class FileException {
     private static void testFile(String fileName) {
         Path path = Paths.get(fileName);
         try {
+
             List<String> lines = Files.readAllLines(path);
         } catch (IOException ioException) {
             throw new RuntimeException(ioException);
