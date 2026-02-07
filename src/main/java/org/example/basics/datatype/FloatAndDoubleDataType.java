@@ -12,7 +12,7 @@ public class FloatAndDoubleDataType {
     public static void main(String... args) {
         float floatVariable = 5.25f;
 
-        double doubleVariable = 10.00001d;
+        double doubleVariable = 10.00001;
 
         System.out.println(floatVariable);
 

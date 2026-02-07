@@ -1,0 +1,62 @@
+package src.main.java.org.example.immutableandmutable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MainMailer {
+
+    public static void main(String[] args) {
+        String[] names = new String[] {"Muthu", "Divi", "Divya", "Divi M.sc", "Divi B.sc"};
+
+        List<StringBuilder> population = getNames(names);
+        Map<StringBuilder, Integer> counts = new TreeMap<>();
+        population.forEach(s -> {
+            counts.merge(s, 1, Integer::sum);
+        });
+
+        System.out.println(counts);
+
+        StringBuilder divi = new StringBuilder("Divi M.sc");
+        System.out.println("There are " + counts.get(divi) + " records for " + divi);
+
+        List<StringBuilder> cleanedNames = standardizeNames(population);
+        System.out.println(cleanedNames);
+
+        System.out.println("There are " + counts.get(divi) + " records for " + divi);
+        System.out.println(counts);
+
+        StringBuilder divi1 = new StringBuilder("Divi");
+        System.out.println("There are " + counts.get(divi1) + " records for " + divi1);
+
+    }
+
+    private static List<StringBuilder> getNames(String[] names) {
+        List<StringBuilder> list = new ArrayList<>();
+        int index = 3;
+
+        for(String name : names) {
+            for(int i = 0; i < index; i++) {
+                list.add(new StringBuilder(name));
+            }
+            index++;
+        }
+        return list;
+    }
+
+    private static List<StringBuilder> standardizeNames(List<StringBuilder> list) {
+        List<StringBuilder> newList = new ArrayList<>();
+
+        for(var name : list) {
+            for(String suffix : new String[] {"M.sc", "B.sc"}) {
+                int startIndex = -1;
+                if((startIndex = name.indexOf(suffix)) > -1) {
+                    name.replace(startIndex - 1, startIndex + suffix.length(), "");
+                }
+                newList.add(name);
+            }
+        }
+        return newList;
+    }
+}
